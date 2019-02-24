@@ -1,0 +1,197 @@
+<html>
+
+<head>
+  <title>Newspaper</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+    rel="stylesheet" type="text/css" />
+  <style>
+    html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      box-sizing: border-box;
+      background-image: linear-gradient(#f7f2e5, #f8ecc2);
+      font-family: "Droid Serif", serif;
+      font-size: 18px;
+      color: #2f2f2f;
+      line-height: 30px;
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 900;
+      font-size: 80px;
+      line-height: 72px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      line-height: normal;
+      font-family: "Playfair Display", serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 36px;
+      line-height: normal;
+    }
+
+    .header-image {
+      text-align: center;
+      margin: auto;
+      display: block;
+      filter: grayscale(1);
+      margin-bottom: 30px;
+    }
+
+    .right-column {
+      border-right: 2px solid #2f2f2f;
+    }
+
+    .column {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 33%;
+      padding: 15px;
+      text-align: justify;
+      vertical-align: top;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 100%;
+      font-size: 16px;
+    }
+
+    .button {
+      border-radius: 25px;
+      border: 1px solid#2f2f2f;
+      color: #2f2f2f;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: all 200ms ease;
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      box-shadow: 2px 2px;
+    }
+
+    .button:hover {
+      color: #fff;
+      background: #2f2f2f;
+    }
+
+    hr {
+      border-top: 2px solid #2f2f2f;
+    }
+
+    .footer {
+      padding: 15px;
+      text-align: justify;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Helena Rodrigues Newspaper</h1>
+  <hr />
+  <div class="subtitle">
+    <strong>SHE CODES FINAL PROJECT, February 2019, Oporto, Portugal</strong>
+  </div>
+  <hr />
+  <div class="article">
+    <div class="column left-column right-column">
+      <h2>From industry to software development team!</h2>
+      <img class="header-image"
+        src="data:image/jpeg;base64,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"
+        alt="Career switch" />
+      <p>
+        My name is Helena Rodrigues, 31 years old, I'm from Melgaço but I moved to Porto when I started studies on
+        Faculty.
+        I'm degree on Environmental Engineering and my first job was in textile industry where I had roles as laboratory
+        technician,
+        production assistance and environmental activities manager. This experience had duration of 2,5 years when
+        organization decided
+        reduces people on its structure. On an unemployment situation I searched for others oportunities in the area but
+        it was not easy.
+
+      </p>
+    </div>
+    <div class="column right-column">
+      <p>
+        At same time, my husband as software developer showed to me an area in expansion on software development
+        industry that
+        could be an option to make a career switch - SOFTWARE TESTING.
+        My first contact with software testing was a registration on <a href="https://www.utest.com">UTEST</a> platform.
+        UTEST is a testers world community
+        where software development companies search for testers to test their product which can be a website, a game or
+        a native mobile application.
+        Then, and for consolidate my experience I registered on <a href="https://www.freelancer.com">FREELANCER</a>
+        platform. Here, I built my profile with experience obtained on Utest and I got two projects where I was tester
+        of a product.
+        With some pratical experience and self-study I came back to Faculty where I consolidate my theorical knowledge
+        in <a
+          href="https://sigarra.up.pt/feup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=UFC&pv_curso_id=1961">SOFTWARE
+          TESTING</a>.
+        More and more liking the area I decided to look for a full time job.
+        After some negative feedback on interviews I got in June 2016
+        a job as Quality Assurance Analyst (other name for tester job) on a e-commerce company focused on African
+        market - <a href="https://www.jumia.com.ng">JUMIA</a>. This experience happens until today's day. I've learned
+        a lot as tester and about importance of this role on a good product development to the customer's experience.
+      </p>
+      <button class="button">
+        <em>Now, click here!</em>
+      </button>
+    </div>
+    <div class="column">
+      <h2>What is Software Testing? Introduction, Definition, Basics & Types</h2>
+      <p>
+        Software testing is defined as an activity to check whether the actual results match the expected results and to
+        ensure
+        that the software system is Defect free. It involves execution of a software component or system component to
+        evaluate one or more properties of interest. Software testing also helps to identify errors, gaps or missing
+        requirements in contrary to the actual
+        requirements. It can be either done manually or using automated tools. Learn
+        more <a href="https://www.guru99.com/software-testing-introduction-importance.html">here</a>.
+      </p>
+      <img class="header-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhu7wbee9eN6LWUW0OWKNIbPcj-ozwZZ84iBXCh0III5-7EV4"
+        alt="Software testing" />
+
+    </div>
+
+  </div>
+  <br />
+  <hr />
+  <div class="footer">
+    👩‍💻 This webpage was possible with knowlege achieved on <a href="https://www.shecodes.io">SHE CODES WORKSHOP</a>.
+    Here,
+    you can learn how the Internet works, about front-end development (HTML, CSS, JavaScript) and basic coding
+    practices and learn the basics of User-Experience (UX) a User Interface (UI) design.
+  </div>
+  <script>
+    function askUser() {
+      let answer = prompt("Did you like my article? Answer yes or no.");
+      answer = answer.toLowerCase().trim();
+      if (answer === "yes") {
+        alert("We can talk more about that!");
+      } else {
+        alert("No problem. Friends anyway");
+      }
+    }
+    let button = document.querySelector("button");
+    button.addEventListener("click", askUser);
+  </script>
+</body>
+
+</html>
